@@ -750,11 +750,48 @@ body {
   line-height: 1;
 }
 
+.modal-tabs {
+  display: flex;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 14px;
+  border: 1px solid var(--border-color);
+}
+
+.modal-tab-btn {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.modal-tab-btn:hover {
+  color: #ffffff;
+}
+
+.modal-tab-btn.active {
+  background: var(--primary-accent);
+  color: #051329;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(0, 242, 254, 0.4);
+}
+
 .modal-instruction {
   font-size: 13px;
   color: var(--text-secondary);
   margin-bottom: 16px;
   text-align: center;
+  line-height: 1.5;
 }
 
 .qr-canvas-wrapper {

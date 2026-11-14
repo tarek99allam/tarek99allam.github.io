@@ -4,8 +4,9 @@ N:Allam;Tarek;;;
 FN:Tarek Allam
 ORG:IoT Engineering & Embedded Solutions
 TITLE:IoT Engineer (HW/SW)
-TEL;TYPE=CELL,VOICE:+201206013114
+TEL;TYPE=CELL,VOICE,PREF:+201206013114
 EMAIL;TYPE=INTERNET,PREF:tarek99allam@gmail.com
+URL;TYPE=WORK:https://tarek99allam.github.io/
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/tarek1999allam/
 NOTE:IoT Engineer | Hardware & Software Development | Embedded Systems & Connectivity
-URL:https://tarek99allam.github.io
 END:VCARD
