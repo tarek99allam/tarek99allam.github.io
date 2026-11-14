@@ -91,10 +91,10 @@ function showToast(message) {
  * QR Code Modal Setup & Generation
  */
 function setupQrCode() {
-  // Determine site URL - if local file, provide instructions/fallback
+  // Determine site URL - if local file or preview, use the live GitHub Pages URL
   let currentUrl = window.location.href;
   if (currentUrl.startsWith("file://") || currentUrl.includes("localhost") || currentUrl.includes("127.0.0.1")) {
-    currentUrl = "https://<your-username>.github.io/<repo-name>/";
+    currentUrl = "https://tarek99allam.github.io/";
   }
 
   const qrTargetUrlText = document.getElementById("qrTargetUrlText");
