@@ -3,6 +3,14 @@
    Theme: Nothing Company / Nothing OS / Glyph Aesthetic
    ========================================================================== */
 
+@font-face {
+  font-family: 'JonathanSignature';
+  src: url('fonts/JonathanSignature.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Nothing Palette: Pure Stark Monochrome + Iconic Recording Red */
   --bg-deep: #0a0a0c;
@@ -20,7 +28,7 @@
   --nothing-gray: #888890;
   --nothing-dark-gray: #3a3a40;
   
-  --font-signature: 'Caveat', cursive, sans-serif;
+  --font-signature: 'JonathanSignature', 'Caveat', cursive, sans-serif;
   --font-dot: 'Doto', monospace;
   --font-mono: 'Space Mono', monospace;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -287,9 +295,26 @@ body {
   font-size: 42px;
   font-weight: 700;
   color: var(--nothing-white);
-  line-height: 1.1;
+  line-height: 1;
   letter-spacing: 0.5px;
-  text-shadow: 0 0 16px rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px 0 2px 0;
+}
+
+.signature-img {
+  height: 52px;
+  width: auto;
+  max-width: 290px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.28));
+  transition: transform var(--transition-fast);
+}
+
+.signature-img:hover {
+  transform: scale(1.02);
 }
 
 /* Subtitle in Dot Matrix font with Red Dot matching the card */
