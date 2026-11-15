@@ -20,14 +20,14 @@ async function saveContact() {
   const vcardText = `BEGIN:VCARD
 VERSION:3.0
 N:Allam;Tarek;;;
-FN:Tarek Allam
-ORG:IoT Engineering & Embedded Solutions
-TITLE:IoT Engineer (HW/SW)
+FN:Tarek Allam (Tito)
+ORG:IoT Engineering & Smart Home Solutions
+TITLE:IoT Engineer & Smart Home Expert (HW/SW)
 TEL;TYPE=CELL,VOICE,PREF:+201206013114
 EMAIL;TYPE=INTERNET,PREF:tarek99allam@gmail.com
 URL;TYPE=WORK:https://tarek99allam.github.io/
 X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/tarek1999allam/
-NOTE:IoT Engineer | Hardware & Software Development
+NOTE:IoT Engineer & Smart Home Expert | Hardware Design, Firmware, Zigbee & Automation
 END:VCARD`;
 
   // 1. Try Web Share API Level 2 (Directly invokes iOS / Android Contacts Import)
@@ -38,7 +38,7 @@ END:VCARD`;
         await navigator.share({
           files: [file],
           title: "Tarek Allam",
-          text: "Tarek Allam - IoT Engineer"
+          text: "Tarek Allam - IoT Engineer & Smart Home Expert"
         });
         showToast("Opening contacts...");
         return;
@@ -130,7 +130,7 @@ function switchQrTab(tab) {
     instruction.textContent = "امسحه بكاميرا أي هاتف ليفتح جهات الاتصال ويسجل رقمك فوراً بدون فتح متصفح أو تنزيل!";
     
     // Direct VCard QR format recognized natively by iOS Camera & Android Google Lens
-    const vcardString = `BEGIN:VCARD\nVERSION:3.0\nN:Allam;Tarek\nFN:Tarek Allam\nORG:IoT Engineer\nTITLE:IoT Engineer (HW/SW)\nTEL:+201206013114\nEMAIL:tarek99allam@gmail.com\nURL:https://tarek99allam.github.io/\nEND:VCARD`;
+    const vcardString = `BEGIN:VCARD\nVERSION:3.0\nN:Allam;Tarek\nFN:Tarek Allam (Tito)\nORG:IoT & Smart Home\nTITLE:IoT Engineer & Smart Home Expert (HW/SW)\nTEL:+201206013114\nEMAIL:tarek99allam@gmail.com\nURL:https://tarek99allam.github.io/\nEND:VCARD`;
     
     targetText.textContent = "⚡ Direct Contact: Tarek Allam (+201206013114)";
     const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=450x450&margin=15&format=png&data=${encodeURIComponent(vcardString)}`;

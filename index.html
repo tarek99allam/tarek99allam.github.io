@@ -3,77 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Tarek Allam | IoT Engineer (HW/SW)</title>
-  <meta name="description" content="Tarek Allam - IoT Engineer specializing in Hardware and Software solutions, Embedded Systems, and Connected Devices.">
-  <meta name="theme-color" content="#0d1117">
+  <title>Tarek Allam | IoT Engineer & Smart Home Expert</title>
+  <meta name="description" content="Tarek Allam (Tito) - IoT Engineer & Smart Home Expert. Hardware & Software Solutions, Embedded Systems, and Zigbee/Automation.">
+  <meta name="theme-color" content="#0a0a0c">
   
   <!-- Open Graph / Meta for Social Cards -->
-  <meta property="og:title" content="Tarek Allam | IoT Engineer">
-  <meta property="og:description" content="Hardware & Software Experience | Embedded Systems, IoT Gateways & Firmware">
+  <meta property="og:title" content="Tarek Allam | IoT Engineer & Smart Home Expert">
+  <meta property="og:description" content="IoT Engineer • Smart Home Expert | HW/SW Solutions">
   <meta property="og:type" content="profile">
   <meta property="og:image" content="https://tarek99allam.github.io/profile.jpg">
   <link rel="icon" type="image/jpeg" href="profile.jpg">
   
-  <!-- Google Fonts (Inter & JetBrains Mono) -->
+  <!-- Google Fonts: Caveat (Signature), Doto (Dot Matrix), Space Mono & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Doto:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Ambient Background Glows -->
-  <div class="ambient-glow glow-1"></div>
-  <div class="ambient-glow glow-2"></div>
-  <div class="circuit-grid-overlay"></div>
+  <!-- Ambient Nothing Glow & Circuit Backdrop -->
+  <div class="ambient-glow glyph-glow"></div>
+  <div class="ambient-glow red-glow"></div>
+  
+  <!-- SVG PCB Circuit Traces (Inspired by the Physical Business Card) -->
+  <div class="circuit-bg-container">
+    <svg class="circuit-svg" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Circuit Traces Top Right to Left -->
+      <path d="M800 120 H580 L480 220 H240 L160 300 H0" stroke="rgba(255,255,255,0.07)" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M800 160 H600 L510 250 H280 L200 330 H0" stroke="rgba(255,255,255,0.05)" stroke-width="1.4" stroke-linejoin="round"/>
+      <path d="M800 200 H630 L540 290 H340 L270 360 H0" stroke="rgba(255,255,255,0.04)" stroke-width="1.2" stroke-linejoin="round"/>
+      
+      <!-- Middle / Lower Traces -->
+      <path d="M800 680 H620 L520 780 H260 L180 860 H0" stroke="rgba(255,255,255,0.06)" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M800 720 H640 L550 810 H300 L220 890 H0" stroke="rgba(255,255,255,0.05)" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M800 760 H670 L580 850 H360 L280 930 H0" stroke="rgba(255,255,255,0.03)" stroke-width="1.2" stroke-linejoin="round"/>
+      
+      <!-- Solder Pads / Vias -->
+      <circle cx="580" cy="120" r="3.5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.2"/>
+      <circle cx="480" cy="220" r="3.5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.2"/>
+      <circle cx="240" cy="220" r="3.5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.2"/>
+      <circle cx="620" cy="680" r="3.5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.2"/>
+      <circle cx="520" cy="780" r="3.5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.2"/>
+      <circle cx="260" cy="780" r="3.5" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.2"/>
+    </svg>
+  </div>
 
   <main class="page-container">
-    <!-- Card Container -->
+    <!-- Nothing OS Style Digital Business Card Wrapper -->
     <div class="card-wrapper">
-      
+
+      <!-- Top Status Bar (Featuring Tito & Nothing Red Dot from Card) -->
+      <div class="card-top-bar">
+        <div class="brand-tito">
+          <span class="tito-text">Tito</span>
+          <span class="sub-chip">(NT-OS)</span>
+        </div>
+        <div class="top-status-right">
+          <!-- Dot cluster matrix -->
+          <span class="dot-cluster">:::</span>
+          <!-- Iconic Nothing Red Dot -->
+          <span class="nothing-red-recording-dot" title="Connected"></span>
+        </div>
+      </div>
+
       <!-- Header / Profile Section -->
       <header class="profile-header">
         <div class="avatar-container">
-          <div class="avatar-ring"></div>
+          <div class="glyph-outer-ring"></div>
           <div class="avatar-core">
             <img src="profile.jpg" alt="Tarek Allam" class="profile-avatar-img">
           </div>
-          <!-- Embedded availability status indicator -->
+          <!-- Red Accent Status Indicator -->
           <div class="status-indicator" title="Available for projects & opportunities">
             <span class="status-dot"></span>
           </div>
         </div>
 
         <div class="profile-info">
-          <h1 class="profile-name">Tarek Allam</h1>
-          <div class="profile-badge">
-            <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-            </svg>
-            <span>IoT Engineer</span>
-            <span class="badge-separator">•</span>
-            <span class="badge-highlight">HW & SW</span>
+          <!-- Signature Handwriting Name matching card -->
+          <h1 class="profile-name-signature">Tarek Allam</h1>
+          
+          <!-- Subtitle in Dot Matrix font with Red Dot matching card -->
+          <div class="nothing-title-badge">
+            <span class="badge-segment">IoT ENGINEER</span>
+            <span class="card-red-dot">●</span>
+            <span class="badge-segment">SMART HOME EXPERT</span>
           </div>
-          <p class="profile-tagline">Connecting Physical Hardware to Intelligent Software</p>
+
+          <p class="profile-tagline">Hardware Design • Embedded Firmware • Smart Home Automation</p>
         </div>
       </header>
 
       <!-- Primary Action: Save to Contacts (.vcf) -->
       <section class="primary-action-section">
         <button id="saveContactBtn" class="btn btn-save-contact" onclick="saveContact()">
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
-            <polyline points="17 21 17 13 7 13 7 21"></polyline>
-            <polyline points="7 3 7 8 15 8"></polyline>
-          </svg>
-          <span class="btn-text">
-            <strong>Save to Contacts</strong>
-            <small>حفظ فوري في جهات اتصالك</small>
-          </span>
+          <div class="btn-icon-wrapper">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+              <polyline points="17 21 17 13 7 13 7 21"></polyline>
+              <polyline points="7 3 7 8 15 8"></polyline>
+            </svg>
+          </div>
+          <div class="btn-text">
+            <span class="main-btn-label">SAVE TO CONTACTS</span>
+            <span class="sub-btn-label">حفظ جهة الاتصال بضغطة واحدة</span>
+          </div>
+          <span class="btn-badge-dot">●</span>
         </button>
       </section>
 
-      <!-- Quick Action Buttons Grid -->
+      <!-- Quick Action Buttons Grid (Nothing Minimalist Circles) -->
       <section class="quick-actions">
         <a href="tel:+201206013114" class="action-btn" id="callBtn" title="Call Tarek">
           <div class="icon-circle phone-circle">
@@ -81,7 +121,7 @@
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
             </svg>
           </div>
-          <span>Call</span>
+          <span class="action-label">CALL</span>
         </a>
 
         <a href="https://wa.me/201206013114?text=Hello%20Tarek,%20I%20got%20your%20contact%20from%20your%20business%20card." target="_blank" rel="noopener noreferrer" class="action-btn" title="WhatsApp Chat">
@@ -90,7 +130,7 @@
               <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
             </svg>
           </div>
-          <span>WhatsApp</span>
+          <span class="action-label">WHATSAPP</span>
         </a>
 
         <a href="mailto:tarek99allam@gmail.com" class="action-btn" title="Send Email">
@@ -100,10 +140,10 @@
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
           </div>
-          <span>Email</span>
+          <span class="action-label">EMAIL</span>
         </a>
 
-        <button class="action-btn" id="qrToggleBtn" onclick="toggleQrModal()" title="View QR Code">
+        <button class="action-btn" id="qrToggleBtn" onclick="toggleQrModal()" title="View Business Card QR">
           <div class="icon-circle qr-circle">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="3" y="3" width="7" height="7"></rect>
@@ -113,23 +153,25 @@
               <path d="M7 7h.01M17 7h.01M7 17h.01M17 17h.01"></path>
             </svg>
           </div>
-          <span>QR Card</span>
+          <span class="action-label">QR CARD</span>
         </button>
       </section>
 
-      <!-- Contact Details Interactive List -->
+      <!-- Contact Details Interactive List (Nothing Style Widgets) -->
       <section class="details-section">
-        <h2 class="section-title">Direct Contact</h2>
+        <div class="section-header-row">
+          <h2 class="section-title">COMMUNICATION</h2>
+          <span class="dot-indicator">:::</span>
+        </div>
         
         <div class="contact-item" onclick="copyToClipboard('+201206013114', 'Phone number copied!')">
           <div class="contact-item-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
             </svg>
           </div>
           <div class="contact-item-content">
-            <span class="label">Mobile & WhatsApp</span>
+            <span class="label">MOBILE & WHATSAPP</span>
             <span class="value" dir="ltr">+20 120 601 3114</span>
           </div>
           <button class="copy-chip" title="Click to copy">
@@ -143,12 +185,12 @@
         <div class="contact-item" onclick="copyToClipboard('tarek99allam@gmail.com', 'Email copied!')">
           <div class="contact-item-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="4"></circle>
-              <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
           </div>
           <div class="contact-item-content">
-            <span class="label">Email Address</span>
+            <span class="label">EMAIL ADDRESS</span>
             <span class="value">tarek99allam@gmail.com</span>
           </div>
           <button class="copy-chip" title="Click to copy">
@@ -162,19 +204,47 @@
 
       <!-- About Me / Brief Overview -->
       <section class="about-section">
-        <h2 class="section-title">Brief Overview</h2>
+        <div class="section-header-row">
+          <h2 class="section-title">PROFILE BRIEF</h2>
+          <span class="dot-indicator">:::</span>
+        </div>
         <div class="bio-card">
           <p class="bio-text">
-            IoT Engineer with deep cross-disciplinary expertise across <strong>Hardware design</strong> and <strong>Software engineering</strong>. Specialized in taking connected product concepts from schematic & prototype to smart firmware, cloud integration, and production-ready IoT ecosystems.
+            IoT Engineer & Smart Home specialist engineering interconnected systems from the ground up. Extensive experience merging <strong>Hardware design</strong>, <strong>Embedded firmware</strong>, and <strong>Automated smart home ecosystems</strong> (Zigbee, ESPHome, MQTT, Cloud gateways) into robust real-world products.
           </p>
         </div>
       </section>
 
-      <!-- HW & SW Expertise Split -->
+      <!-- Expertise Pillars: HW, SW & Smart Home -->
       <section class="expertise-section">
-        <h2 class="section-title">Engineering Focus</h2>
+        <div class="section-header-row">
+          <h2 class="section-title">CORE PILLARS</h2>
+          <span class="dot-indicator">:::</span>
+        </div>
         
         <div class="expertise-grid">
+          <!-- Smart Home & Automation Pillar -->
+          <div class="tech-box smarthome-box">
+            <div class="tech-box-header">
+              <div class="tech-box-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3>Smart Home & Automation</h3>
+                <span class="sub-label">CONNECTED ECOSYSTEMS</span>
+              </div>
+            </div>
+            <ul class="skills-list">
+              <li><span>Zigbee 3.0, Matter & Thread Protocols</span></li>
+              <li><span>ESPHome & Home Assistant Custom Integrations</span></li>
+              <li><span>Smart Relays, Energy Monitoring & Lighting Control</span></li>
+              <li><span>Mesh Networking & Local Automation Rules</span></li>
+            </ul>
+          </div>
+
           <!-- Hardware Card -->
           <div class="tech-box hw-box">
             <div class="tech-box-header">
@@ -194,14 +264,14 @@
               </div>
               <div>
                 <h3>Hardware (HW)</h3>
-                <span class="sub-label">Embedded & Circuits</span>
+                <span class="sub-label">CIRCUITS & EMBEDDED DESIGN</span>
               </div>
             </div>
             <ul class="skills-list">
-              <li><span>Microcontrollers (ESP32, STM32, Arduino)</span></li>
-              <li><span>Circuit & PCB Prototyping</span></li>
-              <li><span>Sensors & Actuator Interfacing</span></li>
-              <li><span>Power Management & Hardware Debugging</span></li>
+              <li><span>Microcontrollers (ESP32, STM32, Nordic, Arduino)</span></li>
+              <li><span>Schematic & PCB Layout Prototyping</span></li>
+              <li><span>Sensor Interfacing & Actuator Drive Stages</span></li>
+              <li><span>Power Supply Management & Hardware Debugging</span></li>
             </ul>
           </div>
 
@@ -216,22 +286,25 @@
               </div>
               <div>
                 <h3>Software (SW)</h3>
-                <span class="sub-label">Firmware & Connectivity</span>
+                <span class="sub-label">FIRMWARE & CONNECTIVITY</span>
               </div>
             </div>
             <ul class="skills-list">
-              <li><span>Embedded C / C++ & Python</span></li>
-              <li><span>IoT Protocols (MQTT, HTTP, BLE, WiFi)</span></li>
-              <li><span>Cloud Platforms & Dashboards (ThingsBoard / AWS IoT)</span></li>
-              <li><span>Real-Time Firmware & Edge Logic</span></li>
+              <li><span>Embedded C / C++, Python & RTOS</span></li>
+              <li><span>IoT Protocols: MQTT, BLE, HTTP, CoAP, WebSocket</span></li>
+              <li><span>Cloud Platforms & Dashboards (AWS IoT, ThingsBoard)</span></li>
+              <li><span>Over-The-Air (OTA) Updates & Device Security</span></li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- External Links (LinkedIn, GitHub) -->
+      <!-- Profiles & Portfolios -->
       <section class="socials-section">
-        <h2 class="section-title">Profiles & Portfolios</h2>
+        <div class="section-header-row">
+          <h2 class="section-title">PROFILES</h2>
+          <span class="dot-indicator">:::</span>
+        </div>
         <div class="social-links-grid">
           <!-- LinkedIn Link -->
           <a href="https://www.linkedin.com/in/tarek1999allam/" target="_blank" rel="noopener noreferrer" class="social-card" id="linkedinLink">
@@ -263,10 +336,11 @@
         </div>
       </section>
 
-      <!-- Footer -->
+      <!-- Footer (Nothing Style) -->
       <footer class="card-footer">
-        <p class="footer-note">Scan this card anytime to get in touch</p>
-        <p class="copyright">© <span id="currentYear"></span> Tarek Allam • IoT & Embedded Solutions</p>
+        <div class="footer-dots">:::</div>
+        <p class="footer-note">SCANNED FROM PHYSICAL BUSINESS CARD</p>
+        <p class="copyright">© <span id="currentYear"></span> TAREK ALLAM <span class="card-red-dot">●</span> (NT-TECH)</p>
       </footer>
 
     </div>
@@ -276,7 +350,10 @@
   <div id="qrModal" class="modal-backdrop" onclick="closeQrModalOnBackdrop(event)">
     <div class="modal-content">
       <div class="modal-header">
-        <h3>Business Card QR Code</h3>
+        <div class="modal-header-left">
+          <span class="modal-brand">Tito // QR</span>
+          <h3>Business Card QR</h3>
+        </div>
         <button class="modal-close-btn" onclick="toggleQrModal()">&times;</button>
       </div>
       <div class="modal-body">
