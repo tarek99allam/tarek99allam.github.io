@@ -10,7 +10,7 @@
    3. Back:  Ubuntu (Medium for Name/Headers, Regular for Phone/Email/Details)
    -------------------------------------------------------------------------- */
 @font-face {
-  font-family: 'Autography';
+  font-family: 'JonathanSignature', 'Autography';
   src: url('fonts/Autography.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
@@ -43,7 +43,7 @@
   --nothing-dark-gray: #3a3a40;
   
   /* Exact Typography requested from card */
-  --font-signature: 'Autography', 'Great Vibes', cursive, sans-serif;
+  --font-signature: 'JonathanSignature', 'Autography', 'Great Vibes', cursive, sans-serif;
   --font-dot: 'Ndot55', 'DotGothic16', 'Doto', monospace;
   --font-ubuntu: 'Ubuntu', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-sans: var(--font-ubuntu);
@@ -305,18 +305,28 @@ body {
   gap: 8px;
 }
 
-/* Signature Name matching the handwriting on the business card (Autography / Great Vibes) */
+/* Signature Name matching the handwriting on the business card */
 .profile-name-signature {
-  font-family: var(--font-signature);
-  font-size: 50px;
-  font-weight: 400;
-  color: var(--nothing-white);
-  line-height: 1.15;
-  letter-spacing: 0.5px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   margin: 6px 0 2px 0;
-  text-shadow: 0 0 16px rgba(255, 255, 255, 0.25);
-  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+}
+
+.signature-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.28));
+  transition: transform var(--transition-fast);
+}
+
+.signature-img:hover {
+  transform: scale(1.02);
 }
 
 /* Subtitle in Dot Matrix font with Red Dot matching the card */

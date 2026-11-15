@@ -1,4 +1,10 @@
 photoshop_cards/
+photoshop_cards_editable/
 business_card_psd/
+mazen_*
 *.zip
 *.psd
+Tarek_Allam_Signature_4K.png
+package*.json
+node_modules/
+
